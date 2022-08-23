@@ -1,22 +1,26 @@
-*{
+* {
     background-color: rgb(68, 68, 68);
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    
+
 }
 
-.header{
+header {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     font-size: 25px;
     margin-top: 50px;
     color: rgb(72, 11, 129);
 }
 
-.header-text{
-    display: block;
-    justify-content: center;
+header>h1 {
+    text-align: center;
+}
+
+.header-text {
+
     font-size: 20px;
     margin-top: 15px;
     color: antiquewhite;
@@ -24,25 +28,92 @@
     margin: 0 auto;
     padding: 30px;
     text-align: center;
-    inline-size: 1250px;
+
 }
 
-main{
-    width: 20px;
-    text-align: center;
+main {
+    margin: 0 20px;
 }
 
-.row{
+.row {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-}
-
-.justify-center{
     justify-content: center;
+
+
 }
 
-footer{
+
+
+.box-body {
+    padding: 5px;
+    flex: 1 0 100%;
+    margin-bottom: 7px;
+}
+
+.inside-box {
+    outline: 2px dashed black;
+    outline-offset: -2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    transition: all 0.5s ease-in-out;
+    margin: 5px 5px;
+    padding: 2px;
+
+}
+
+.inside-box>h2 {
+    position: relative;
+    margin: -4rem 0 1.5rem 0;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.ref-block code {
+    white-space: pre-wrap;
+    overflow: auto;
+    background-image: linear-gradient(rgba(232, 102, 236, 0.3) 0%,
+            rgba(232, 102, 236, 0.6) 100%);
+    display: flex;
+    align-items: center;
+}
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.linear-gradient-background {
+    background-image: linear-gradient(rgba(232, 102, 236, 0.3) 0%,
+            rgba(232, 102, 236, 0.6) 100%);
+}
+
+.code-card .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover,
+.code-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}
+
+.card-header {
+    position: relative;
+    margin-top: -20px;
+}
+
+footer {
     margin: 20px;
     text-align: center;
 }
