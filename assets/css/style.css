@@ -28,6 +28,21 @@
 }
 
 main{
-    width: 1.5rem;
+    width: 20px;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+footer{
+    margin: 20px;
     text-align: center;
 }
